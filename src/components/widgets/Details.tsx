@@ -15,16 +15,16 @@ const Details = () => {
   return (
     <>
       <div>
-        <span className="text-4xl font-bold font-heading tracking-tight md:text-7xl sm:text-6xl bg-gradient-to-b from-primary to-muted-foreground bg-clip-text text-transparent">
+        <span className="text-4xl font-bold font-heading tracking-tight md:text-6xl sm:text-5xl bg-gradient-to-b from-primary to-muted-foreground bg-clip-text text-transparent">
           Dignesh Hirpara<span className="text-4xl md:text-6xl sm:text-7xl">.</span>
         </span>
 
         <div className="max-w-sm sm:mt-4 ">
-          <p className="mt-2 sm:mt-5 text-base  sm:text-lg md:text-xl font-medium leading-loose primary-gradient">
-            Fullstack Dev | I turn ideas into M.V.P. & take M.V.P.s to{" "}
-            <span className="ml-1 before:block before:absolute before:-inset-1 before:skew-y-3 before:bg-blue-400 before:dark:bg-blue-500 relative inline-block">
-              <span className="relative text-white">production</span>
-            </span>
+          <p className="mt-2 sm:mt-5 text-base  sm:text-base md:text-lg font-medium leading-loose primary-gradient">
+           Web developer | Javascript, Typescript, React (NextJS), NodeJS
+            {/* <span className="ml-1 before:block before:absolute before:-inset-1 before:skew-y-3 before:bg-blue-400 before:dark:bg-blue-500 relative inline-block">
+              <span className="relative text-white">Text</span>
+            </span> */}
           </p>
         </div>
         <div className="flex gap-4 align-middle items-center flex-wrap my-5">

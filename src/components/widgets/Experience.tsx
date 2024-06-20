@@ -1,6 +1,5 @@
 import { experiencesConfig } from "@/config/experience";
-import { Experience } from "@/types/types";
- 
+import { Experience as experienceType } from "@/types/types";
 
 export const ExperienceSection = () => {
   return (
@@ -18,23 +17,19 @@ export const ExperienceSection = () => {
       after:z-10
       after:absolute"
     >
-      <h1 className="text-2xl primary-gradient font-bold tracking-tighter mb-3 z-50 md:text-4xl sm:text-3xl">
-        Experiences
+      <h1 className="text-2xl primary-gradient font-bold tracking-tighter mb-3 z-50 md:text-3xl sm:text-2xl">
+        Experience
       </h1>
-      <div className="relative flex flex-col justify-between h-[350px] overflow-y-scroll">
+      <div className="relative flex flex-col justify-between h-[200px] overflow-y-scroll">
         {experiencesConfig.map((experience, index) => (
           <Experience key={index} experience={experience} />
         ))}
-        {/* <div className="relative flex items-center">
-          <span className="mt-3 w-3 h-3 rounded-full icon-glow-muted"></span>
-          <p className="mt-3 mx-1">👋</p>
-        </div> */}
       </div>
     </section>
   );
 };
 
-const Experience = ({ experience }: { experience: Experience }) => {
+const Experience = ({ experience }: { experience: experienceType }) => {
   return (
     <div className="relative flex gap-2 items-start text-md pb-4">
       <span
@@ -52,22 +47,30 @@ const Experience = ({ experience }: { experience: Experience }) => {
                   "
       ></span>
       <div>
-        <h1 className="text-base font-medium mb-1   sm:text-lg">{experience.title}</h1>
+        <span className="text-base font-medium inline mb-1 sm:text-lg">
+          {experience.title }  {experience.role && `| ${experience.role}`}
+        </span>
+
         <div className="primary-gradient">
           <a
             href={experience.company.url}
-            target="_blank"
+            target={experience.company.url && "_blank"}
             className="hover:underline font-medium primary-gradient text-sm sm:text-base"
           >
             {experience.company.name}
           </a>
           {" | "}
-          <span className="text-sm sm:text-base primary-gradient">{experience.employmentType}</span>
+          <span className="text-sm sm:text-base primary-gradient">
+          {experience.start} - {experience.end}
+          </span>
         </div>
         <p className="text-sm text-muted-foreground">
-          {experience.start} - {experience.end}
+         
         </p>
-        <a href={experience.location.url} className="my-1 text-sm primary-gradient">
+        <a
+          href={''}
+          className="my-1 text-sm text-muted-foreground"
+        >
           {experience.location.name}
         </a>
         <ul className="mt-3 text-muted-foreground">

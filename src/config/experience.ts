@@ -1,35 +1,43 @@
 import { Experience } from "@/types/types";
 
-
 export const experiencesConfig: Experience[] = [
   {
-    title: "Next.js developer",
-    employmentType: "Core Team member",
+    title: "Junior web developer",
+    role: "",
     company: {
-      name: "Bettre Institute",
-      url: "https://bettreinstitute.com",
+      name: "BlackBugs Technologies",
+      url: "https://blackbugstechnologies.com/",
     },
-    location: { name: "Surat, Gujarat, India" },
-    start: "November, 2023",
+    location: { name: "Surat, India" },
+    start: "Feb 2023",
     end: "Present",
     description: [
-      "Currently developing AI solutions for empowering L.M.S in our platform",
-      "Developed the official website for Bettre Institute",
     ],
   },
   {
     title: "Intership",
-    employmentType: "Javascript developer",
+    role: "Web developer",
     company: {
-      name: "Delta Technology",
-      url: "#",
+      name: "BlackBugs Technologies",
+      url: "https://blackbugstechnologies.com/",
     },
-    location: { name: "Surat, Gujarat, India" },
-    start: "November, 2023",
-    end: "Present",
+    location: { name: "Surat, India" },
+    start: "Aug 2022",
+    end: "Jan 2023",
     description: [
-      "Currently developing AI solutions for empowering L.M.S in our platform",
-      "Developed the official website for Bettre Institute",
     ],
   },
+  {
+    title: "Andriod app developer",
+    role: "",
+    company: {
+      name: "Freelancing",
+      url: "",
+    },
+    location: { name: "Surat, India" },
+    start: "Jun 2020",
+    end: "Jul 2022",
+    description: [
+    ],
+  }
 ];
